@@ -25,7 +25,7 @@ This project provides a simple, modern index page for your PHP CLI scripts, insp
 
 1. Place `index.php` and `cli.php` in your project directory (e.g., `/C:/xampp/htdocs/Index-CLI/`).
 2. Start your local server (e.g., XAMPP/Apache).
-3. Open [http://localhost/Index-CLI/](Index-CLI) in your browser.
+3. Open [Website](http://localhost/Index-CLI/) in your browser.
 
 ## Example
 
