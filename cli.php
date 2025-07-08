@@ -1,44 +1,35 @@
 <?php
-// CLI PHP script to open a dashboard in the browser
+// CLI PHP script to open a PHP dashboard
 
-// This script checks if a dashboard file exists, creates it if not, and opens it in the default web browser.
-// Ensure the script is run from the command line
 if (php_sapi_name() !== 'cli') {
-    die("This script can only be run from the command line.\n");
-}
-// Define the path to the dashboard file
-$dashboardFile = __DIR__ . '/dashboard.php';
-
-// Check if the file exists
-if (!file_exists($dashboardFile)) {
-    // Create a simple HTML dashboard if it doesn't exist
-    file_put_contents($dashboardFile, <<<HTML
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Dashboard</title>
-</head>
-<body>
-    <h1>Welcome to Your Dashboard</h1>
-    <p>This dashboard was opened by a PHP CLI script.</p>
-</body>
-</html>
-HTML);
+    echo "This script must be run from the command line.\n";
+    exit(1);
 }
 
-// Start a PHP built-in server (on port 8000)
-$command = "php -S localhost:8000 > /dev/null 2>&1 &";
-shell_exec($command);
+$dashboardFile = 'dashboard.php';
+$host = 'localhost';
+$port = 8000;
+$url = "http://$host:$port/$dashboardFile";
 
-// Open the dashboard in the default web browser
-$url = 'http://localhost:8000/' . basename($dashboardFile);
-echo "Opening dashboard at: $url\n";
+// Start PHP built-in server in the background
+echo "Starting PHP server at $host:$port...\n";
+shell_exec("php -S $host:$port > /dev/null 2>&1 &");
 
-// Cross-platform browser launcher
-if (PHP_OS_FAMILY === 'Windows') {
-    shell_exec("start $url");
-} elseif (PHP_OS_FAMILY === 'Darwin') {
-    shell_exec("open $url");
-} else {
-    shell_exec("xdg-open $url");
+// Wait a second to make sure the server is up
+sleep(1);
+
+// Open in default browser
+echo "Opening dashboard at $url\n";
+switch (PHP_OS_FAMILY) {
+    case 'Windows':
+        shell_exec("start $url");
+        break;
+    case 'Darwin': // macOS
+        shell_exec("open $url");
+        break;
+    case 'Linux':
+        shell_exec("xdg-open $url");
+        break;
+    default:
+        echo "Please open this URL manually: $url\n";
 }
