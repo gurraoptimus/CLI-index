@@ -7,7 +7,7 @@ if (php_sapi_name() !== 'cli') {
     die("This script can only be run from the command line.\n");
 }
 // Define the path to the dashboard file
-$dashboardFile = __DIR__ . '/dashboard.php';
+$dashboardFile = __DIR__ . '/dashboard.html';
 
 // Check if the file exists
 if (!file_exists($dashboardFile)) {
