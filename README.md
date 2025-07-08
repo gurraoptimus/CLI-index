@@ -39,9 +39,10 @@ This project provides a simple, modern index page for your PHP CLI scripts, insp
 ## File Structure
 
 ```
-/CLI-index/
+/Index CLI/
 ├── index.php
 ├── cli.php
+├── dashboard.php
 └── README.md
 ```
 ## 🛠️ Getting Started:
