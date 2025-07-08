@@ -117,13 +117,13 @@ document.getElementById('runCliBtn').onclick = function() {
         .then(output => {
             document.getElementById('cliOutput').style.display = 'block';
             document.getElementById('cliOutput').textContent = output;
-            btn.disabled = false;
+            btn.enabled = true;
             btn.textContent = 'Run CLI Script';
         })
         .catch(() => {
             document.getElementById('cliOutput').style.display = 'block';
             document.getElementById('cliOutput').textContent = 'Error running CLI script.';
-            btn.disabled = false;
+            btn.enabled = true;
             btn.textContent = 'Run CLI Script';
         });
 };
