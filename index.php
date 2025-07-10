@@ -91,19 +91,19 @@ echo "<svg width=\"64\" height=\"64\" viewBox=\"0 0 64 64\" style=\"margin-botto
             <stop offset=\"100%\" stop-color=\"#00e6d0\"/>
         </linearGradient>
     </defs>
-    <rect x=\"0\" y=\"0\" width=\"64\" height=\"64\" rx=\"18\" fill=\"url(#cli-grad)\"/>
+    <rect x=\"0\" y=\"0\" width=\"64\" height=\"64\" rx=\"19\" fill=\"url(#cli-grad)\"/>
     <!-- Spotify-like waves, ngrok color style -->
     <g>
-        <path d=\"M20 38c7-3 17-3 24 0\" stroke=\"#fff\" stroke-width=\"3.2\" fill=\"none\" stroke-linecap=\"round\"></path>
-        <path d=\"M22 32c6-2 14-2 20 0\" stroke=\"#e6e6ff\" stroke-width=\"2.2\" fill=\"none\" stroke-linecap=\"round\"></path>
-        <path d=\"M24 27c5-1 11-1 16 0\" stroke=\"#00e6d0\" stroke-width=\"1.6\" fill=\"none\" stroke-linecap=\"round\"></path>
+    <path d=\"M20 38c7-3 17-3 24 0\" stroke=\"#fff\" stroke-width=\"3.2\" fill=\"none\" stroke-linecap=\"round\"></path>
+    <path d=\"M22 32c6-2 14-2 20 0\" stroke=\"#e6e6ff\" stroke-width=\"2.2\" fill=\"none\" stroke-linecap=\"round\"></path>
+    <path d=\"M24 27c5-1 11-1 16 0\" stroke=\"#00e6d0\" stroke-width=\"1.6\" fill=\"none\" stroke-linecap=\"round\"></path>
     </g>
     <!-- ngrok-style text -->
     <text x=\"50%\" y=\"19\" text-anchor=\"middle\" font-size=\"22\" font-family=\"Fira Mono, Consolas, monospace\" fill=\"#fff\" font-weight=\"bold\" letter-spacing=\"-2\">Index</text>
     <text x=\"50%\" y=\"55\" text-anchor=\"middle\" font-size=\"18\" font-family=\"Fira Mono, Consolas, monospace\" fill=\"#00e6d0\" font-weight=\"bold\" letter-spacing=\"-1\">CLI</text>
 </svg>";
 echo "<h1>Welcome to Index CLI</h1>";
-echo "<p>This is the index page located at <b>" . __FILE__ . "</b></p>";
+echo "<p>This is the index page located at ".$_SERVER['REQUEST_URI']."</p>";
 echo "<p>Run CLI script to Open CLI Dashboard</p>";
 echo '<button id="runCliBtn">Dashboard</button>';
 echo "<script>

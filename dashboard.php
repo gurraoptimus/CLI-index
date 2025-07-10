@@ -1,8 +1,6 @@
 <?php
 if (isset($_GET['run']) && $_GET['run'] === 'cli') {
     header('Content-Type: text/plain');
-    // Run your shell command here — keep it safe
-    // Example: show user and uptime
     $output = shell_exec('whoami && uptime 2>&1');
     echo $output ?: 'No output or command failed.';
     exit;
@@ -59,16 +57,17 @@ if (isset($_GET['run']) && $_GET['run'] === 'cli') {
       opacity: 0.6;
       cursor: not-allowed;
     }
-    pre {
-      background: #23234d;
-      color: #e6e6ff;
+    .terminal {
+      background: #000;
+      color: #33ff33;
       padding: 18px;
       border-radius: 10px;
       margin-top: 24px;
       font-family: 'Fira Mono', monospace;
       white-space: pre-wrap;
       word-break: break-word;
-      display: none;
+      min-height: 140px;
+      box-shadow: 0 0 12px rgba(0, 230, 208, 0.25);
     }
     .logo {
       display: flex;
@@ -104,16 +103,15 @@ if (isset($_GET['run']) && $_GET['run'] === 'cli') {
       <path d="M20 38c7-3 17-3 24 0" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round" />
       <path d="M22 32c6-2 14-2 20 0" stroke="#e6e6ff" stroke-width="2.2" fill="none" stroke-linecap="round" />
       <path d="M24 27c5-1 11-1 16 0" stroke="#00e6d0" stroke-width="1.6" fill="none" stroke-linecap="round" />
-      
       <text x="50%" y="19" text-anchor="middle" font-size="22" font-family="Fira Mono, Consolas, monospace" fill="#fff" font-weight="bold" letter-spacing="-2">Index</text>
       <text x="50%" y="55" text-anchor="middle" font-size="18" font-family="Fira Mono, Consolas, monospace" fill="#00e6d0" font-weight="bold" letter-spacing="-1">CLI</text>
     </svg>
   </div>
 
-  <h2>Run CLI Command</h2>
-  <p>Click below to execute the CLI script on your server:</p>
+  <h2>Web Terminal</h2>
+  <p>Click the button below to run a CLI command from the server:</p>
   <button id="runCliBtn">Run CLI</button>
-  <pre id="cliOutput"></pre>
+  <div class="terminal" id="cliOutput">&gt; Waiting for command...</div>
 </div>
 
 <script>
@@ -121,20 +119,17 @@ document.getElementById('runCliBtn').onclick = async function () {
   const btn = this;
   const output = document.getElementById('cliOutput');
   btn.disabled = true;
-  btn.textContent = 'Running...';
-  output.style.display = 'block';
-  output.textContent = 'Running command...';
+  output.textContent = '> Running command...\n';
 
   try {
     const res = await fetch('?run=cli');
     const text = await res.text();
-    output.textContent = text;
+    output.textContent += text;
   } catch (err) {
-    output.textContent = 'Failed to run CLI.';
+    output.textContent += 'Error: Failed to run CLI.';
   }
 
   btn.disabled = false;
-  btn.textContent = 'Run CLI';
 };
 </script>
 
