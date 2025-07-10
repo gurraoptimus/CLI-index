@@ -99,14 +99,13 @@ echo "<svg width=\"64\" height=\"64\" viewBox=\"0 0 64 64\" style=\"margin-botto
         <path d=\"M24 27c5-1 11-1 16 0\" stroke=\"#00e6d0\" stroke-width=\"1.6\" fill=\"none\" stroke-linecap=\"round\"></path>
     </g>
     <!-- ngrok-style text -->
-    <text x=\"50%\" y=\"28\" text-anchor=\"middle\" font-size=\"22\" font-family=\"Fira Mono, Consolas, monospace\" fill=\"#fff\" font-weight=\"bold\" letter-spacing=\"-2\">Index</text>
-    <text x=\"50%\" y=\"48\" text-anchor=\"middle\" font-size=\"18\" font-family=\"Fira Mono, Consolas, monospace\" fill=\"#00e6d0\" font-weight=\"bold\" letter-spacing=\"-1\">CLI</text>
+    <text x=\"50%\" y=\"19\" text-anchor=\"middle\" font-size=\"22\" font-family=\"Fira Mono, Consolas, monospace\" fill=\"#fff\" font-weight=\"bold\" letter-spacing=\"-2\">Index</text>
+    <text x=\"50%\" y=\"55\" text-anchor=\"middle\" font-size=\"18\" font-family=\"Fira Mono, Consolas, monospace\" fill=\"#00e6d0\" font-weight=\"bold\" letter-spacing=\"-1\">CLI</text>
 </svg>";
 echo "<h1>Welcome to Index CLI</h1>";
 echo "<p>This is the index page located at <b>" . __FILE__ . "</b></p>";
-echo "<p>To run the CLI script, use the command below or click the button:</p>";
-echo '<button id="runCliBtn">Run CLI Script</button>';
-echo '<pre id="cliOutput"></pre>';
+echo "<p>Run CLI script to Open CLI Dashboard</p>";
+echo '<button id="runCliBtn">Dashboard</button>';
 echo "<script>
 document.getElementById('runCliBtn').onclick = function() {
     var btn = this;

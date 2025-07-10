@@ -104,8 +104,9 @@ if (isset($_GET['run']) && $_GET['run'] === 'cli') {
       <path d="M20 38c7-3 17-3 24 0" stroke="#fff" stroke-width="3.2" fill="none" stroke-linecap="round" />
       <path d="M22 32c6-2 14-2 20 0" stroke="#e6e6ff" stroke-width="2.2" fill="none" stroke-linecap="round" />
       <path d="M24 27c5-1 11-1 16 0" stroke="#00e6d0" stroke-width="1.6" fill="none" stroke-linecap="round" />
-      <text x="50%" y="28" text-anchor="middle" font-size="22" font-family="Fira Mono, Consolas, monospace" fill="#fff" font-weight="bold" letter-spacing="-2">Index</text>
-      <text x="50%" y="48" text-anchor="middle" font-size="18" font-family="Fira Mono, Consolas, monospace" fill="#00e6d0" font-weight="bold" letter-spacing="-1">cli</text>
+      
+      <text x="50%" y="19" text-anchor="middle" font-size="22" font-family="Fira Mono, Consolas, monospace" fill="#fff" font-weight="bold" letter-spacing="-2">Index</text>
+      <text x="50%" y="55" text-anchor="middle" font-size="18" font-family="Fira Mono, Consolas, monospace" fill="#00e6d0" font-weight="bold" letter-spacing="-1">CLI</text>
     </svg>
   </div>
 
