@@ -4,7 +4,6 @@
 
 <div align="center">
     <sub>
-        <h1>Index CLI</h1>
         <b>Modern PHP CLI index page</b><br>
         Inspired by the ngrok dashboard with a gradient background and clean UI.
     </sub>
@@ -29,11 +28,11 @@ A simple and modern landing page for running your PHP CLI scripts—styled after
 ## 🧪 Example
 
 ### Main UI
-<img src="https://raw.githubusercontent.com/gurraoptimus/Index-CLI/screenshot.png" alt="Screenshot of Index CLI UI" width="120" />
+<img src="https://raw.githubusercontent.com/gurraoptimus/Index-CLI/refs/heads/main/screenshot.png" alt="Screenshot of Index CLI UI" width="150" />
 
 
 ### Dashboard
-<img src="https://raw.githubusercontent.com/gurraoptimus/Index-CLI/dashboard.png" alt="Screenshot of Index CLI UI Dashboard" width="120" />
+<img src="https://raw.githubusercontent.com/gurraoptimus/Index-CLI/refs/heads/main/dashboard.png" alt="Screenshot of Index CLI UI Dashboard" width="120" />
 
 
 ---
