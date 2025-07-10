@@ -100,7 +100,7 @@ echo "<svg width=\"64\" height=\"64\" viewBox=\"0 0 64 64\" style=\"margin-botto
     </g>
     <!-- ngrok-style text -->
     <text x=\"50%\" y=\"28\" text-anchor=\"middle\" font-size=\"22\" font-family=\"Fira Mono, Consolas, monospace\" fill=\"#fff\" font-weight=\"bold\" letter-spacing=\"-2\">Index</text>
-    <text x=\"50%\" y=\"48\" text-anchor=\"middle\" font-size=\"18\" font-family=\"Fira Mono, Consolas, monospace\" fill=\"#00e6d0\" font-weight=\"bold\" letter-spacing=\"-1\">cli</text>
+    <text x=\"50%\" y=\"48\" text-anchor=\"middle\" font-size=\"18\" font-family=\"Fira Mono, Consolas, monospace\" fill=\"#00e6d0\" font-weight=\"bold\" letter-spacing=\"-1\">CLI</text>
 </svg>";
 echo "<h1>Welcome to Index CLI</h1>";
 echo "<p>This is the index page located at <b>" . __FILE__ . "</b></p>";

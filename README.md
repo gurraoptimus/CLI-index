@@ -1,7 +1,7 @@
 # Index CLI
 
 <p align="center">
-<svg width='64' height='64' viewBox='0 0 64 64' style='margin-bottom:18px;' xmlns='http://www.w3.org/2000/svg'><defs><linearGradient id='cli-grad' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='%236c47ff'/><stop offset='100%' stop-color='%2300e6d0'/></linearGradient></defs><rect x='0' y='0' width='64' height='64' rx='18' fill='url(%23cli-grad)'/><g><path d='M20 38c7-3 17-3 24 0' stroke='%23fff' stroke-width='3.2' fill='none' stroke-linecap='round'></path><path d='M22 32c6-2 14-2 20 0' stroke='%23e6e6ff' stroke-width='2.2' fill='none' stroke-linecap='round'></path><path d='M24 27c5-1 11-1 16 0' stroke='%2300e6d0' stroke-width='1.6' fill='none' stroke-linecap='round'></path></g><text x='50%' y='28' text-anchor='middle' font-size='22' font-family='Fira Mono, Consolas, monospace' fill='%23fff' font-weight='bold' letter-spacing='-2'>Index</text><text x='50%' y='48' text-anchor='middle' font-size='18' font-family='Fira Mono, Consolas, monospace' fill='%2300e6d0' font-weight='bold' letter-spacing='-1'>cli</text></svg>
+<svg width='64' height='64' viewBox='0 0 64 64' style='margin-bottom:18px;' xmlns='http://www.w3.org/2000/svg'><defs><linearGradient id='cli-grad' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='%236c47ff'/><stop offset='100%' stop-color='%2300e6d0'/></linearGradient></defs><rect x='0' y='0' width='64' height='64' rx='18' fill='url(%23cli-grad)'/><g><path d='M20 38c7-3 17-3 24 0' stroke='%23fff' stroke-width='3.2' fill='none' stroke-linecap='round'></path><path d='M22 32c6-2 14-2 20 0' stroke='%23e6e6ff' stroke-width='2.2' fill='none' stroke-linecap='round'></path><path d='M24 27c5-1 11-1 16 0' stroke='%2300e6d0' stroke-width='1.6' fill='none' stroke-linecap='round'></path></g><text x='50%' y='28' text-anchor='middle' font-size='22' font-family='Fira Mono, Consolas, monospace' fill='%23fff' font-weight='bold' letter-spacing='-2'>Index</text><text x='50%' y='48' text-anchor='middle' font-size='18' font-family='Fira Mono, Consolas, monospace' fill='%2300e6d0' font-weight='bold' letter-spacing='-1'>CLI</text></svg>
 </p>
 
 <div align="center">
@@ -19,7 +19,7 @@ This project provides a simple, modern index page for your PHP CLI scripts, insp
 
 - Clean, responsive UI
 - "Run CLI Script" button to execute your CLI PHP script (`cli.php`) directly from the browser
-- Displays CLI output in a styled code block
+- Open CLI DashBoard
 
 ## Usage
 

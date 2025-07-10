@@ -1,15 +1,13 @@
 <?php
 // CLI PHP script to open a PHP dashboard
 
-if (php_sapi_name() !== 'cli') {
-    echo "This script must be run from the command line.\n";
-    exit(1);
-}
+// dashboard.php should be in the same directory as this script
+if (isset($_GET['run']) && $_GET['run'] === 'cli')
 
 $dashboardFile = 'dashboard.php';
 $host = 'localhost';
-$port = 8000;
-$url = "http://$host:$port/$dashboardFile";
+$port = 80;
+$url = "http://$host:$port/Index-CLI/dashboard.php";
 
 // Start PHP built-in server in the background
 echo "Starting PHP server at $host:$port...\n";
