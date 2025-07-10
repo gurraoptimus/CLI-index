@@ -1,7 +1,7 @@
 <?php
 if (isset($_GET['run']) && $_GET['run'] === 'cli') {
-    header('Content-Type: text/plain');
-    $output = shell_exec('whoami && uptime 2>&1');
+    header('Content-Type: text/plain; charset=utf-8');
+    $output = shell_exec(' 2>&1'); // Replace with your actual CLI command
     echo $output ?: 'No output or command failed.';
     exit;
 }
@@ -13,6 +13,7 @@ if (isset($_GET['run']) && $_GET['run'] === 'cli') {
   <title>Index CLI Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><defs><linearGradient id='cli-grad' x1='0' y1='0' x2='1' y2='1'><stop offset='0%25' stop-color='%236c47ff'/><stop offset='100%25' stop-color='%2300e6d0'/></linearGradient></defs><rect width='48' height='48' rx='12' fill='url(%23cli-grad)'/><path d='M15 28c5-2 13-2 18 0' stroke='white' stroke-width='2.2' fill='none' stroke-linecap='round'/><text x='50%25' y='58%25' text-anchor='middle' font-size='16' font-family='Fira Mono, Consolas, monospace' fill='%2300e6d0' font-weight='bold'>cli</text></svg>">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;600&display=swap">
   <style>
     body {
       font-family: 'Inter', sans-serif;
