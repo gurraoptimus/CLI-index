@@ -19,7 +19,7 @@ This project provides a simple, modern index page for your PHP CLI scripts, insp
 
 - Clean, responsive UI
 - "Run CLI Script" button to execute your CLI PHP script (`cli.php`) directly from the browser
-- Open CLI DashBoard
+- Open CLI DashBoard web web terminal
 
 ## Usage
 
@@ -30,6 +30,8 @@ This project provides a simple, modern index page for your PHP CLI scripts, insp
 ## Example
 
 ![Screenshot of Index CLI UI](screenshot.png)
+
+![Screenshot of Index CLI UI Dashboard](dashboard.png)
 
 ## How it works
 
