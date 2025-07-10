@@ -32,7 +32,7 @@ A simple and modern landing page for running your PHP CLI scripts—styled after
 
 
 ### Dashboard
-<img src="https://raw.githubusercontent.com/gurraoptimus/Index-CLI/refs/heads/main/dashboard.png" alt="Screenshot of Index CLI UI Dashboard" width="120" />
+<img src="https://raw.githubusercontent.com/gurraoptimus/Index-CLI/refs/heads/main/dashboard.png" alt="Screenshot of Index CLI UI Dashboard" width="280" />
 
 
 ---
