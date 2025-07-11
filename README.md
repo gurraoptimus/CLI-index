@@ -65,8 +65,9 @@ A simple and modern landing page for running your PHP CLI scripts—styled after
 ## 🛠️ Getting Started
 
 1. **Clone the repository:**
-```
- gh repo clone gurraoptimus/Index-CLI cd Index-CLI
+```bash
+ git clone https://github.com/gurraoptimus/Index-CLI 
+ cd Index-CLI
 ```
 2. **Start your server (XAMPP, Apache, etc.)**
 
