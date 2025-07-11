@@ -1,7 +1,7 @@
 <?php
 if (isset($_GET['run']) && $_GET['run'] === 'cli') {
     header('Content-Type: text/plain; charset=utf-8');
-    $output = shell_exec(' 2>&1'); // Replace with your actual CLI command
+    $output = shell_exec('echo Hello, World! 2>&1'); // Replace with your actual CLI command
     echo $output ?: 'No output or command failed.';
     exit;
 }
@@ -60,7 +60,8 @@ if (isset($_GET['run']) && $_GET['run'] === 'cli') {
     }
     .terminal {
       background: #000;
-      color: #33ff33;
+      color: #00e6d0;
+      border: 1px solid #23234d;
       padding: 18px;
       border-radius: 10px;
       margin-top: 24px;
@@ -109,9 +110,9 @@ if (isset($_GET['run']) && $_GET['run'] === 'cli') {
     </svg>
   </div>
 
-  <h2>Web Terminal</h2>
-  <p>Click the button below to run a CLI command from the server:</p>
-  <button id="runCliBtn">Run CLI</button>
+  <h2>Web Terminal</h2> 
+  <p>This is the CLI dashboard. Click the button below to run the CLI command.</p>
+      <button id="runCliBtn">Run CLI</button>
   <div class="terminal" id="cliOutput">&gt; Waiting for command...</div>
 </div>
 
@@ -133,6 +134,8 @@ document.getElementById('runCliBtn').onclick = async function () {
   btn.disabled = false;
 };
 </script>
-
+<footer style="text-align: center; margin-top: 20px; color: #aaa;">
+  <p>&copy; Index CLI. All rights reserved.</p>
+</footer>
 </body>
 </html>

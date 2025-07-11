@@ -28,10 +28,10 @@ A simple and modern landing page for running your PHP CLI scripts—styled after
 ## 🧪 Example
 
 ### Main UI
-<img src="https://raw.githubusercontent.com/gurraoptimus/Index-CLI/refs/heads/main/screenshot.png" alt="Screenshot of Index CLI UI" width="320" />
+<img src="https://raw.githubusercontent.com/gurraoptimus/Index-CLI/refs/heads/main/assets/screenshot.png" alt="Screenshot of Index CLI UI" width="320" />
 
 ### CLI Dashboard
-<img src="https://raw.githubusercontent.com/gurraoptimus/Index-CLI/refs/heads/main/dashboard.png" alt="Screenshot of Index CLI UI Dashboard" width="320" />
+<img src="https://raw.githubusercontent.com/gurraoptimus/Index-CLI/refs/heads/main/assets/dashboard.png" alt="Screenshot of Index CLI UI Dashboard" width="320" />
 
 ---
 

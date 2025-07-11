@@ -128,6 +128,9 @@ document.getElementById('runCliBtn').onclick = function() {
 };
 </script>";
 echo "</div>";
+echo "<footer style=\"text-align: center; margin-top: 20px; color: #aaa;\">
+  <p>&copy; Index CLI. All rights reserved.</p>
+</footer>";
 echo "</body>";
 echo "</html>";
 ?>
