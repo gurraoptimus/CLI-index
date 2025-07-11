@@ -54,6 +54,7 @@ A simple and modern landing page for running your PHP CLI scripts—styled after
 ## 🗂 File Structure
 ```
 /Index-CLI/
+├── assets
 ├── index.php # Main UI
 ├── cli.php # Executes CLI logic
 ├── dashboard.php # Optional dashboard/terminal output
